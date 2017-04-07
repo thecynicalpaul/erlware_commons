@@ -326,8 +326,8 @@ random_uniform() ->
     rand:uniform().
 -else.
 random_uniform() ->
-    random:seed(os:timestamp()),
-    random:uniform().
+    rand:seed(os:timestamp()),
+    rand:uniform().
 -endif.
 
 %%%===================================================================
